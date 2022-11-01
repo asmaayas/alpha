@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/buc.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6f0ac0632a.js" crossorigin="anonymous"></script>
+        <style>
+            .modal-dialog {
+                width: 80%;
+                height: 80%;
+                margin: auto;
+                padding: 0;
+            }
+    
+            @media (min-width: 576px) {
+                .modal-dialog {
+                    max-width: 80%;
+                    max-height: 80%;
+                    margin: auto;
+                }
+            }
+    
+            .modal-content {
+                height: auto;
+                min-height: 80%;
+                border-radius: 0;
+                margin-top: 10px;
+            }
+            .modal-body img{
+                max-width: 100%;
+            }
+            .row{
+                justify-content: center;
+            }
+            .fa-1x {
+  font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+.dark-blue-text {
+  color: gray;
+}
+
+/* .fa-bars{
+    color: ;
+} */
+            </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light light-blue lighten-4 ">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="./index.html"><img src="./css/images/logo.png" height="80" alt=""></a>
+      
+        <!-- Collapse button -->
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+              class="fas fa-bars fa-1x"></i></span></button>
+      
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i> Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./bus.html"><i class="fa-solid fa-bus-simple"></i>Buses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./car.html"><i class="fa-solid fa-car"></i>Cars</a>
+            </li>
+          </ul>
+          <!-- Links -->
+      
+        </div>
+        <!-- Collapsible content -->
+      
+      </nav>
+    <div class="container mt-5">
+        <div class="carousel-container position-relative row">
+
+            <!-- Sorry! Lightbox doesn't work - yet. -->
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-slide-number="0">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Mercedes Bens 42 seats</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#exampleModal2"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe class='ifram'
+                                            src="https://momento360.com/e/u/c04854e47f0f42cab0a581dba1f3d364?utm_campaign=embed&utm_source=other&heading=72.65&pitch=-13.94&field-of-view=75&size=medium&display-plan=true"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/bus 42/42bus.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/bus 42/Large_bus_49_seat-removebg-preview.png" style="width: 900px ; height: 580px;" class="d-block " alt="..."
+                            data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+
+
+                    <div class="carousel-item" data-slide-number="1">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Mercedes Bens 35 seats</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#exampleModal3"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#exampleModal4"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                       
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div>
+                                        <img src="./img/bus35/1.jpg" alt="">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/bus35/plan 35 bus.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/bus35/bus35-removebg-preview.png"  class="d-block " style="width: 900px ; height: 580px;" alt="..."
+                            data-remote="https://source.unsplash.com/tXqVe7oO-go/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+
+
+                    <div class="carousel-item" data-slide-number="2">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Mercedes Bens 31 seats</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#seven"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#eight"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="seven" tabindex="-1" role="dialog"
+                            aria-labelledby="sevenLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="sevenLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe class='ifram'
+                                            src="https://momento360.com/e/u/1d9d4133536e4f72a4d9530b255da249?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="eight" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/bus31/IMG-20200926-WA0022.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/bus31/31bus-removebg-preview.png" class="d-block" style="width: 900px ; height: 580px;"  alt="..."
+                            data-remote="https://source.unsplash.com/qlYQb7B9vog/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+                    <div class="carousel-item" data-slide-number="3">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Mercedes Bens VVIP</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#nine"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#ten"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="nine" tabindex="-1" role="dialog"
+                            aria-labelledby="nineLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="sevenLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe class='ifram'
+                                            src="https://momento360.com/e/u/45632b02b36a4257b3c37c8b719fe1df?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="ten" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/VVIP/14seat.webp" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/VVIP/VVIP_large_bus_14_seat-removebg-preview.png" class="d-block" style="width: 900px ; height: 580px;"  alt="..."
+                            data-remote="https://source.unsplash.com/qlYQb7B9vog/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+
+                    <div class="carousel-item" data-slide-number="4">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Mercedes Bens V Class</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#oneone"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#twotwo"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="oneone" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe class='ifram'
+                                            src="https://momento360.com/e/u/cde1c3d7dd444fadb7b33676b58460b1?utm_campaign=embed&utm_source=other&heading=911.87&pitch=-22.9&field-of-view=75&size=medium&display-plan=true"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="twotwo" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/V class/v class.webp" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/V class/Mercedes_van-removebg-preview.png" class="d-block" style="width: 900px ; height: 580px;"  alt="..."
+                            data-remote="https://source.unsplash.com/a_xa7RUKzdc/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+                    <div class="carousel-item" data-slide-number="5">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>HYUNDAI COASTER</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#Threee"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#fourr"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Threee" tabindex="-1" role="dialog"
+                            aria-labelledby="sevenLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="sevenLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                       <img src="./img/coaster/Small Bus 17 Seat (5).jpg" alt="" style="width:100vh; height: 80vh;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="fourr" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/coaster/Mini-Bus-Layout_Ford-Euro-5-17-seater-scaled-e1656334579326-1024x422.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/coaster/coaster__1_-removebg-preview.png" class="d-block" style="width: 900px ; height: 580px;"  alt="..."
+                            data-remote="https://source.unsplash.com/qlYQb7B9vog/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+                    <div class="carousel-item" data-slide-number="6">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Sprinter VIP 9 seat</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#f5"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#s6"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="f5" tabindex="-1" role="dialog"
+                            aria-labelledby="sevenLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="sevenLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                       <img src="./img/Sprinter VIP 9 seat/VIP Mercedes 9 Seats (11).jpg" alt="" style="width:100vh; height: 80vh;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="s6" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/Sprinter VIP 9 seat/9-passenger.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/Sprinter VIP 9 seat/PHOTO-2022-10-31-09-34-57-removebg-preview.png" class="d-block" style="width: 900px ; height: 580px;"  alt="..."
+                            data-remote="https://source.unsplash.com/qlYQb7B9vog/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+                    <div class="carousel-item" data-slide-number="7">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Hyundai Mini Van 12 seats</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#s7"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#e8"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="s7" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe class='ifram'
+                                            src="https://momento360.com/e/u/45632b02b36a4257b3c37c8b719fe1df?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="e8" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/bus 12/sprinter-passenger-van-144-wheelbase-standardroof.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/bus 12/IMG_2918_edited-removebg-preview.png" style="width: 755px ; height: 593px;" class="d-block " alt="..."
+                            data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+                    <div class="carousel-item" data-slide-number="8">
+                        <h5 class="title"> <i class="fa-solid fa-bus mr-2"></i>Hyundai Mini Van 6 Seats</h5>
+                        <div class="icon">
+                            <a href="" data-toggle="modal" data-target="#n9"><i class="fa-solid fa-panorama"></i></a><br>
+                            <a href="" data-toggle="modal" data-target="#t10"><i class="fa-regular fa-map"></i></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="n9" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog modal-fullscreen " role="document">
+                                <div class="modal-content " style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">360
+                                            picture</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div>
+                                            <img src="./img/bus 6/floor plan.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="t10" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-right:0px ;">
+                            <div class="modal-dialog  " role="document">
+                                <div class="modal-content" style=" background-color: rgba(0,0,0,0.2);">
+                                    <div class="modal-header m-4">
+                                        <h5 class="modal-title" id="exampleModalLabel " style="color: #fff;">Floor
+                                            plane</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <img src="./img/bus 6/download.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/bus 6/IMG_2945-removebg-preview.png" style="width: 900px ; height: 580px;" class="d-block " alt="..."
+                            data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image"
+                            data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row mx-0">
+                            <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected"
+                                data-target="#myCarousel" data-slide-to="0">
+                                <img src="./img/bus 42/Large_bus_49_seat-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                            <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="1">
+                                <img src="./img/bus35/bus35-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                            <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="2">
+                                <img src="./img/bus31/31bus-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                            <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="3">
+                                <img src="./img/VVIP/VVIP_large_bus_14_seat-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                            <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="4">
+                                <img src="./img/V class/Mercedes_van-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                            <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="5">
+                                <img src="./img/coaster/coaster__1_-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mx-0">
+                            <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="6">
+                                <img src="./img/Sprinter VIP 9 seat/PHOTO-2022-10-31-09-34-57-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                            <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="7">
+                                <img src="./img/bus 12/IMG_2918_edited-removebg-preview.png" class="img-fluid" alt="..." style="width: 439px;" >
+                            </div>
+                            <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2"
+                                data-target="#myCarousel" data-slide-to="8">
+                                <img src="./img/bus 6/IMG_2945-removebg-preview.png" class="img-fluid" alt="...">
+                            </div>
+                          
+                            <div class="col-2 px-1 py-2"></div>
+                            <div class="col-2 px-1 py-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span> -->
+                    <i class="fa-solid fa-caret-left fa-xl" style="color:#000 ;"></i>
+                </a>
+                <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span> -->
+                    <i class="fa-solid fa-caret-right fa-xl" style="color:#000 ;"></i>
+                </a>
+            </div>
+
+        </div> <!-- /row -->
+    </div> <!-- /container -->
+</body>
+<script>
+    $('#myCarousel').carousel({
+        interval: false
+    });
+    $('#carousel-thumbs').carousel({
+        interval: false
+    });
+
+    // handles the carousel thumbnails
+    // https://stackoverflow.com/questions/25752187/bootstrap-carousel-with-thumbnails-multiple-carousel
+    $('[id^=carousel-selector-]').click(function () {
+        var id_selector = $(this).attr('id');
+        var id = parseInt(id_selector.substr(id_selector.lastIndexOf('-') + 1));
+        $('#myCarousel').carousel(id);
+    });
+    // Only display 3 items in nav on mobile.
+    if ($(window).width() < 575) {
+        $('#carousel-thumbs .row div:nth-child(4)').each(function () {
+            var rowBoundary = $(this);
+            $('<div class="row mx-0">').insertAfter(rowBoundary.parent()).append(rowBoundary.nextAll().addBack());
+        });
+        $('#carousel-thumbs .carousel-item .row:nth-child(even)').each(function () {
+            var boundary = $(this);
+            $('<div class="carousel-item">').insertAfter(boundary.parent()).append(boundary.nextAll().addBack());
+        });
+    }
+    // Hide slide arrows if too few items.
+    if ($('#carousel-thumbs .carousel-item').length < 2) {
+        $('#carousel-thumbs [class^=carousel-control-]').remove();
+        $('.machine-carousel-container #carousel-thumbs').css('padding', '0 5px');
+    }
+    // when the carousel slides, auto update
+    $('#myCarousel').on('slide.bs.carousel', function (e) {
+        var id = parseInt($(e.relatedTarget).attr('data-slide-number'));
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $('[id=carousel-selector-' + id + ']').addClass('selected');
+    });
+    // when user swipes, go next or previous
+    $('#myCarousel').swipe({
+        fallbackToMouseEvents: true,
+        swipeLeft: function (e) {
+            $('#myCarousel').carousel('next');
+        },
+        swipeRight: function (e) {
+            $('#myCarousel').carousel('prev');
+        },
+        allowPageScroll: 'vertical',
+        preventDefaultEvents: false,
+        threshold: 75
+    });
+    /*
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+    */
+
+    $('#myCarousel .carousel-item img').on('click', function (e) {
+        var src = $(e.target).attr('data-remote');
+        if (src) $(this).ekkoLightbox();
+    });
+</script>
+
+</html>
